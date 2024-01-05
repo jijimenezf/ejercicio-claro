@@ -4,6 +4,7 @@ import type { MediaContextType } from "../utils/types";
 import { formatDate, formatHour } from "../utils/makeRequest";
 
 export default function ProgramInfo() {
+  // @ts-ignore:next-line
   const [mediaEvent, _] = useContext(MultimediaContext) as MediaContextType;
 
   /**

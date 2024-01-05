@@ -7,6 +7,7 @@ const MultimediaProvider = ({ children }: { children: React.ReactNode }) => {
   const [mediaEvent, setMediaEvent] = useState<MediaContextType | null>();
 
   return (
+    // @ts-ignore:next-line
     <MultimediaContext.Provider value={[mediaEvent, setMediaEvent]}>
       {children}
     </MultimediaContext.Provider>

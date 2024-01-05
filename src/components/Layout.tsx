@@ -11,7 +11,7 @@ type JSONResponse = {
   };
 };
 
-export default function Layout({ inputParams }: { inputParams: Entry }) {
+export default function Layout({ inputParams }: { inputParams: Record<string, string> }) {
   const [channels, setChannels] = useState<Channel[]>([]);
 
   /**

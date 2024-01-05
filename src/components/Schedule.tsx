@@ -35,6 +35,7 @@ const SingleEvent = ({ eventChannel }: { eventChannel: EventChannel }) => {
   const [_, setMediaEvent] = useContext(MultimediaContext);
 
   function updateProgramInfo(eventChannel: EventChannel) {
+    // @ts-ignore:next-line
     setMediaEvent(eventChannel);
   }
 
